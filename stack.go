@@ -52,3 +52,7 @@ func (s *Stack) Pop() (int, error) {
 
 	return value, nil
 }
+
+func (s *Stack) Depth() int {
+	return s.curr + 1
+}
